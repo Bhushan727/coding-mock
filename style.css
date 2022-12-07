@@ -1,0 +1,144 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #fff;
+}
+header{
+
+    background-color: lightskyblue;
+}
+
+header>img{
+    height: 50px;
+}
+nav{
+    float: right;
+    display: flex;
+    list-style: none;
+}
+button:hover{
+    cursor: pointer;
+}
+.navLink{
+    border: 1px solid black;
+    background-color: #fff;
+    margin: 8px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.navLink:hover{
+    cursor: pointer;
+    background-color: rgb(55, 54, 54);
+}
+
+.bannerContainer{
+    min-height: 42vh;
+    background-image: linear-gradient(pink, rgb(28, 121, 255), yellow);
+    margin-top: 20px;
+}
+.chromeB{
+    font-size: 50px;
+    padding: 30px 0;
+}
+
+.contContainer{
+    display: flex;
+}
+
+.contApple{
+    margin:0 50px;
+}
+
+.para{
+    margin: 0px 0 30px 0;
+
+}
+
+.btn{
+    padding: 15px 20px;
+    color: #000;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 50px;
+    background-color:dodgerblue;
+    font-weight: 700;
+}
+
+
+.cardContainer{
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.card{
+    width: 200px;
+    height: 250px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px grey;
+    background-color: whitesmoke;
+    margin: 20px 0;
+}
+.card:hover{
+    box-shadow: 10px 10px 10px grey;
+}
+.cardImg{
+    height: 30%;
+    width: 95%;
+   
+}
+.cardMoto{
+   font-size: 20px;
+   color: #000;
+   margin: 20px 0;
+}
+.cardBtn{
+    padding: 12px 20px;
+    border-radius: 20px;
+    position: relative;
+    left: 13%;
+    color: white;
+    background-color: #000;
+}
+
+footer{
+    height: 50px;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copy{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    nav{
+        display: none;
+    }
+    .bannerContainer{
+        min-height: 70vh;
+    }
+    .contContainer{
+        flex-direction:column-reverse;
+        
+    }
+    .cardContainer{
+        flex-direction: column;
+    }
+
+
+}
